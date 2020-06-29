@@ -1,0 +1,21 @@
+<div class="d-flex align-items-center mt-4 mb-4">
+    <div class="ml-auto posts_button">
+        <%= link_to '投稿一覧', posts_path, class: 'btn btn-outline-info' %>
+        <%= link_to '編集', edit_post_path(@post), class: "btn btn-outline-info" %>
+    </div>
+</div>
+
+<div class="card">
+  <div class="card-header bg-info text-white">
+    <h4><%= @post.title %></h4>
+  </div>
+  解決した方法
+  <div class="card-body">
+    <p class="card-text"><%= simple_format(@post.detail) %></p>
+  </div>
+  所属
+  <div class="card-body">
+    <p class="card-text"><%= simple_format(@post.belong) %></p>
+    <p class="card-text"><%= simple_format(@post.name) %></p>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="d-flex align-items-center">
+  <h1>投稿</h1>
+  <div class="ml-auto posts_button">
+      <%= link_to '投稿一覧', posts_path, class: 'btn btn-outline-info' %>
+  </div>
+</div>
+<%= form_for @post do |f| %>
+    <div class="form-group">
+      <%= f.label :title, 'タイトル' %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <small id="title-tip" class="form-text text-muted">
+          症状を入力してください。
+      </small>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :detail, '詳細' %>
+      <%= f.text_area :detail, class: 'form-control' %>
+      <small id="detail-tip" class="form-text text-muted">
+          解決した方法を入力してください。
+      </small>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :belong, '所属' %>
+      <%= f.text_field :belong, class: 'form-control' %>
+        <small id="belong-tip" class="form-text text-muted">
+            所属を入力してください。
+        </small>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :name, '投稿者名' %>
+      <%= f.text_field :name, class: 'form-control' %>
+        <small id="name-tip" class="form-text text-muted">
+            あなたの名前を入力してください。
+        </small>
+  </div>
+
+  <%= f.submit '投稿', class: 'btn btn-info btn-block' %>
+  <small id="submit-tip" class="form-text text-muted">
+      誤字脱字はありませんか？解決方法は分かりやすく記入しましょう！
+  </small>
+<% end %>
