@@ -8,11 +8,11 @@
 誰でも投稿できるアプリであり、トラブルの概要、詳細と解決法を入力することで簡単に投稿できます。
 投稿一覧、詳細画面、投稿ページという構成になっています。
 
-![TOP一覧](emini_TOP.jpg)
+![TOP一覧](./images/emini_TOP.png)
 
-![投稿ページ](emini-post.jpg)
+![投稿ページ](./images/emini-post.png)
 
-![詳細ページ](emini_detail.jpg)
+![詳細ページ](./images/emini_detail.png)
  
  
 ## Requirement
